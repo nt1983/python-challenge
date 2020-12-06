@@ -1,13 +1,13 @@
 import csv
 import os
-import statistics
+
 csvfilepath='PyBank\\Resources\\budget_data.csv'
-#PL_changes=[]
 changes_average=0
 PL_Change_Dic={
     "PL_Dates":[],
     "PL_Changes":[]
 }
+#Open CSV file and move to header row
 with open(csvfilepath) as csvfile:
     csvreader=csv.reader(csvfile,delimiter=',')
     header = next(csvreader)

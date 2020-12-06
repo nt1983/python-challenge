@@ -1,8 +1,8 @@
 import csv
 import os
-import statistics
-csvfilepath='PyBank\\Resources\\budget_data.csv'
-#PL_changes=[]
+
+csvfilepath='PyPoll\\Resources\\election_data.csv'
+
 changes_average=0
 PL_Change_Dic={
     "PL_Dates":[],
