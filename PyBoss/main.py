@@ -90,5 +90,7 @@ with open(formattedfile, 'w', newline='') as formatted_csv:
     csvwriter.writerow(['Emp ID','First Name','Last Name','DOB', 'SSN','State'])
     for i in range(len(Formated_Dic["Emp ID"])):
         csvwriter.writerow([Formated_Dic["Emp ID"][i],Formated_Dic["First Name"][i],Formated_Dic["Last Name"][i],Formated_Dic["DOB"][i], Formated_Dic["SSN"][i],Formated_Dic["State"][i]])
+
+print("New formatted CSV file created on PyBoss\Resources\formatted_csv.csv")
     
 
