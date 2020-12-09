@@ -47,10 +47,12 @@ for i in range(len(Candidates_Dic["Name"])):
     print(str(Candidates_Dic["Name"][i])+": "+f"{vote:.3f}% ("+str(Candidates_Dic["Candidate_Votes"][i])+")")
 print("----------------------------")
 print(f"Winner: {Winner_name}")
+print("----------------------------")
 
 #Send result to TXT file
 txtfilepath='PyPoll\\Analysis\\output.txt'
 with open(txtfilepath, "w") as txt_file:
+    txt_file.write("\n")
     txt_file.write("Election Results")
     txt_file.write("\n")
     txt_file.write("----------------------------")
@@ -66,3 +68,5 @@ with open(txtfilepath, "w") as txt_file:
     txt_file.write("----------------------------")
     txt_file.write("\n")
     txt_file.write(f"Winner: {Winner_name}")
+    txt_file.write("\n")
+    txt_file.write("----------------------------")
